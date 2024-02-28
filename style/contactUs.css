@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #002c59;
+  --secondary-color: #5c6061;
+  --tertiary-color: #ffffff;
+}
+
+body,
+html {
+  background-color: var(--tertiary-color);
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/*NAVIGATION BAR*/
+.navbar {
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px 30px 60px;
+  width: 1440px;
+  height: 89px;
+}
+
+.navbar-brand {
+  font: 29px;
+}
+
+#active-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+#notActive-link {
+  color: var(--secondary-color);
+}
+
+nav .nav-link ul {
+  gap: 40px;
+}
+
+.login-btn button {
+  background-color: var(--primary-color);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--tertiary-color);
+  width: 130px;
+  height: 40px;
+  border-radius: 6px;
+  margin-right: 100px;
+}
+
+#getInTouch-page {
+  padding: 60px;
+  display: flex;
+}
+
+#getInTouch-page .image {
+  width: 657px;
+  height: 582px;
+}
+
+#getInTouch-page .form {
+  width: 620px;
+  height: 628px;
+}
+
+#getInTouch-page .form h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+#getInTouch-page .form #fullname {
+  width: 287px;
+  height: 62px;
+  border-radius: 30px;
+  border: 1px solid black;
+  font-size: 16px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+#getInTouch-page .form #subject {
+  width: 287px;
+  height: 62px;
+  border-radius: 30px;
+  border: 1px solid black;
+  font-size: 16px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+#getInTouch-page .form #email {
+  width: 620px;
+  height: 62px;
+  border-radius: 30px;
+  border: 1px solid black;
+  font-size: 16px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+#getInTouch-page .form #message {
+  width: 620px;
+  height: 270px;
+  border-radius: 30px;
+  border: 1px solid black;
+  font-size: 16px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+#getInTouch-page .form button {
+  width: 158px;
+  height: 52px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  float: right;
+}
+
+/* For tablets and smaller desktop screens */
+/*NAVIGATION BAR*/
+@media only screen and (max-width: 1023px) {
+  .navbar-collapse {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+  }
+
+  nav .nav-link ul {
+    gap: 0px;
+  }
+
+  .login-btn button {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--tertiary-color);
+    width: 100x;
+    height: 30px;
+    border-radius: 6px;
+    margin-left: 12px;
+  }
+
+  #getInTouch-page {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #getInTouch-page .image img {
+    width: 650px;
+    height: 500px;
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  .navbar-collapse {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+  }
+
+  nav .nav-link ul {
+    gap: 0px;
+  }
+
+  .login-btn button {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--tertiary-color);
+    width: 100x;
+    height: 30px;
+    border-radius: 6px;
+    margin-left: 12px;
+  }
+
+  #getInTouch-page {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #getInTouch-page .image img {
+    width: 370px;
+    height: 300px;
+  }
+
+  #getInTouch-page .form {
+    width: 370px;
+    height: 628px;
+  }
+
+  #getInTouch-page .form h1 {
+    font-size: 30px;
+  }
+
+  #getInTouch-page .form #fullname {
+    width: 250px;
+    height: 62px;
+  }
+
+  #getInTouch-page .form #subject {
+    width: 250px;
+    height: 62px;
+  }
+
+  #getInTouch-page .form #email {
+    width: 350px;
+    height: 62px;
+  }
+
+  #getInTouch-page .form #message {
+    width: 350px;
+    height: 270px;
+  }
+
+  #getInTouch-page .form button {
+    margin-right: 20px;
+  }
+}
