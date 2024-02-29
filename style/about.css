@@ -366,6 +366,8 @@ nav .nav-link ul {
 #home-footer-page .useful-links p {
   font-size: 16px;
 }
+
+
 /* For tablets and smaller desktop screens */
 /*NAVIGATION BAR*/
 @media only screen and (max-width: 1023px) {
@@ -396,6 +398,7 @@ nav .nav-link ul {
     flex-direction: column;
     padding: 60px;
     gap: 10px;
+    margin-top: 100px;
   }
 
   #aboutUs-page .aboutUs-img img {
