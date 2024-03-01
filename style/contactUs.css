@@ -21,6 +21,8 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px;
+  max-width: 1440px;
+  margin: 0 auto; /* Centers the section horizontally */
 }
 
 .navbar-collapse {
@@ -61,18 +63,28 @@ nav .nav-link ul {
 
 /*Get in touch page*/
 #getInTouch-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
 }
 
 #getInTouch-page .image {
-  width: 657px;
-  height: 582px;
+  width: 50%;
+}
+
+#getInTouch-page .image img {
+  width: 100%;
 }
 
 #getInTouch-page .form {
-  width: 620px;
-  height: 628px;
+  width: 50%;
+}
+
+#getInTouch-page .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #getInTouch-page .form h1 {
@@ -83,43 +95,39 @@ nav .nav-link ul {
 }
 
 #getInTouch-page .form #fullname {
-  width: 287px;
+  width: 50%;
   height: 62px;
   border-radius: 30px;
   border: 1px solid black;
   font-size: 16px;
-  padding-left: 30px;
-  margin-bottom: 20px;
-  margin-right: 40px;
+  padding: 20px;
 }
 
 #getInTouch-page .form #subject {
-  width: 287px;
+  width: 50%;
   height: 62px;
   border-radius: 30px;
   border: 1px solid black;
   font-size: 16px;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 #getInTouch-page .form #email {
-  width: 620px;
+  width: 100%;
   height: 62px;
   border-radius: 30px;
   border: 1px solid black;
   font-size: 16px;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 #getInTouch-page .form #message {
-  width: 620px;
+  width: 100%;
   height: 270px;
   border-radius: 30px;
   border: 1px solid black;
   font-size: 16px;
-  padding-left: 30px;
+  padding-left: 20px;
   margin-bottom: 20px;
 }
 
@@ -130,11 +138,13 @@ nav .nav-link ul {
   border: none;
   background-color: var(--primary-color);
   color: var(--tertiary-color);
-  float: right;
+  align-self: self-end;
 }
 
 /*Contact cards page*/
 #contactUs-cards {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
 }
 
@@ -142,6 +152,7 @@ nav .nav-link ul {
   display: flex;
   justify-content: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 #contactUs-cards .cards .card {
@@ -171,6 +182,8 @@ nav .nav-link ul {
 
 /*HOME-FOOTER-PAGE*/
 #home-footer-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
   justify-content: space-around;
@@ -206,15 +219,17 @@ nav .nav-link ul {
   font-size: 16px;
 }
 
+/* ABOUT US MAP PAGE */
+
 #aboutUs-map-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
 }
 
 #aboutUs-map-page img {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1420px;
+  width: 100%;
 }
 
 /* For tablets and smaller desktop screens */
@@ -245,11 +260,19 @@ nav .nav-link ul {
     padding: 60px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+  }
+
+  #getInTouch-page .image {
+    width: 100%;
   }
 
   #getInTouch-page .image img {
-    width: 650px;
-    height: 500px;
+    width: 100%;
+  }
+
+  #getInTouch-page .form {
+    width: 100%;
   }
 
   /*Contact cards page*/
@@ -257,9 +280,9 @@ nav .nav-link ul {
     padding: 60px;
   }
 
-  #contactUs-cards .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  /* ABOUT US MAP PAGE */
+  #aboutUs-map-page {
+    padding: 60px;
   }
 
   /*HOME-FOOTER-PAGE*/
@@ -269,14 +292,6 @@ nav .nav-link ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
-  }
-
-  #aboutUs-map-page {
-    padding: 60px;
-  }
-
-  #aboutUs-map-page img {
-    width: 650px;
   }
 }
 
@@ -347,14 +362,28 @@ nav .nav-link ul {
     margin-right: 20px;
   }
 
-  /*Contact Us*/
-  #contactUs-cards {
-    padding: 60px;
-  }
-
-  #contactUs-cards .cards {
+  #getInTouch-page {
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+  }
+
+  #getInTouch-page .image {
+    width: 100%;
+  }
+
+  #getInTouch-page .image img {
+    width: 100%;
+  }
+
+  #getInTouch-page .form {
+    width: 100%;
+  }
+
+  /* ABOUT US MAP PAGE */
+  #aboutUs-map-page {
+    padding: 10px;
   }
 
   /*HOME-FOOTER-PAGE*/
@@ -365,13 +394,5 @@ nav .nav-link ul {
     flex-direction: column;
     align-items: center;
     gap: 70px;
-  }
-
-  #aboutUs-map-page {
-    padding: 10px;
-  }
-
-  #aboutUs-map-page img {
-    width: 350px;
   }
 }

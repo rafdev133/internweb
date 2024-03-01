@@ -21,6 +21,8 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px;
+  max-width: 1440px;
+  margin: 0 auto; /* Centers the section horizontally */
 }
 
 .navbar-collapse {
@@ -61,18 +63,21 @@ nav .nav-link ul {
 
 /*HERO PAGE */
 #hero-page {
-  height: auto;
+  max-width: 1440px;
+  margin: 0 auto; /* Centers the section horizontally */
+  display: flex;
+  justify-content: center;
+  width: 100%;
   padding: 60px;
-  display: grid;
-  grid-template-columns: 707px 562px;
   gap: 80px;
 }
 
 #hero-page .hero-text {
   padding-top: 100px;
-  display: grid;
-  grid-template-rows: auto 136px 93px 1fr;
-  row-gap: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 30px;
 }
 
 #hero-page .hero-text h2 {
@@ -81,26 +86,22 @@ nav .nav-link ul {
 }
 
 #hero-page .hero-text h1 {
+  width: 100%;
   font-size: 50px;
   font-weight: bold;
-  width: 707px;
-  height: 136px;
   color: var(--secondary-color);
 }
 
 #hero-page .hero-text span {
+  width: 100%;
   font-size: 50px;
   font-weight: bold;
-  width: 707px;
-  height: 136px;
   color: var(--primary-color);
 }
 
 #hero-page .hero-text p {
   color: var(--secondary-color);
   font-size: 16px;
-  width: 620px;
-  height: 93px;
 }
 
 #hero-page .hero-text button {
@@ -122,14 +123,14 @@ nav .nav-link ul {
   border: 1px solid var(--primary-color);
 }
 
-#hero-page .hero-img img {
-  width: 562px;
-  height: 464px;
+#hero-page .hero-img {
+  width: 50%;
 }
 
 /*FEATURE PAGE*/
-
 #feature-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
   flex-direction: column;
@@ -155,19 +156,15 @@ nav .nav-link ul {
 }
 
 #feature-page .feature-cards {
-  display: grid;
-  grid-template-columns: 305px 483px 305px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #feature-page .feature-cards .cards {
   width: 305px;
   height: 237px;
   gap: 10px;
-}
-
-#feature-page .feature-cards #cards {
-  width: 483px;
-  height: 237px;
+  margin: 60px;
 }
 
 #feature-page .feature-cards .cards {
@@ -199,18 +196,18 @@ nav .nav-link ul {
 
 /*ABOUT US PAGE */
 #aboutUs-page {
-  height: auto;
-  padding: 55px;
-  display: grid;
-  grid-template-columns: 567px 620px;
-  gap: 120px;
+  max-width: 1440px;
+  margin: auto;
+  padding: 60px;
+  display: flex;
 }
 
 #aboutUs-page .aboutUs-text {
-  padding-top: 60px;
-  display: grid;
-  grid-template-rows: auto 136px 93px 1fr;
-  row-gap: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 #aboutUs-page .aboutUs-text h2 {
@@ -221,24 +218,19 @@ nav .nav-link ul {
 #aboutUs-page .aboutUs-text h1 {
   font-size: 50px;
   font-weight: bold;
-  width: auto;
-  height: 136px;
   color: var(--secondary-color);
 }
 
 #aboutUs-page .aboutUs-text span {
   font-size: 50px;
   font-weight: bold;
-  width: 707px;
-  height: 136px;
+
   color: var(--primary-color);
 }
 
 #aboutUs-page .aboutUs-text p {
   color: var(--secondary-color);
   font-size: 16px;
-  width: 620px;
-  height: 93px;
 }
 
 #aboutUs-page .aboutUs-text button {
@@ -254,19 +246,22 @@ nav .nav-link ul {
   color: var(--tertiary-color);
 }
 
-#aboutUs-page .aboutUs-img img {
-  width: 567px;
-  height: 444px;
+#aboutUs-page .aboutUs-img {
+  width: 50%;
 }
 
 /*COLLAB SITES PAGE*/
 #collab-sites-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
 }
 
 #collab-sites-page .collab-sites {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 #collab-sites-page .collab-sites img {
@@ -276,39 +271,37 @@ nav .nav-link ul {
 
 /*VIDEO PAGE*/
 #video-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
 }
 
 #video-page .video img {
-  width: 1420px;
-  height: 922px;
+  width: 100%;
 }
 
 /*TESTIMONIAL PAGE*/
 #testimonial-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
-  gap: 80px;
+  gap: 90px;
 }
 
 #testimonial-page .testimonial-cards {
   display: flex;
-  padding: 0px 40px;
-  width: 808px;
-  height: 328px;
+  width: 50%;
 }
 
 #testimonial-page .testimonial-cards .card {
   display: flex;
   width: 326px;
-  height: 315px;
   border: none;
-  margin: 40px;
+  margin: 10px;
 }
 
 #testimonial-page .testimonial-cards .card .paragraph {
-  width: 326px;
-  height: 176px;
   text-align: justify;
 }
 
@@ -321,8 +314,14 @@ nav .nav-link ul {
   gap: 10px;
 }
 
-#testimonial-page .testimonial-cards .card .infos .name {
-  padding-top: 30px;
+#testimonial-page .testimonial-cards .card .infos {
+  display: flex;
+  gap: 10px;
+}
+
+#testimonial-page .testimonial-cards .card .infos img {
+  width: auto;
+  height: auto;
 }
 
 #testimonial-page .testimonial-cards .card .infos h3 {
@@ -334,17 +333,11 @@ nav .nav-link ul {
   font-weight: 200;
 }
 
-#testimonial-page .testimonial-cards .card .infos img {
-  width: 100px;
-  height: 100px;
-}
-
 #testimonial-page .testimonial-text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 506px;
-  height: 416px;
+  width: 50%;
+  gap: 20px;
 }
 
 #testimonial-page .testimonial-text h2 {
@@ -378,15 +371,12 @@ nav .nav-link ul {
 
 /*LATEST NEWS PAGE*/
 #latest-news-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
   flex-direction: column;
   gap: 60px;
-}
-
-#latest-news-page .title {
-  width: 480px;
-  height: 83px;
 }
 
 #latest-news-page .title h3 {
@@ -401,13 +391,11 @@ nav .nav-link ul {
 }
 
 #latest-news-page .latest-news-cards {
-  width: 1310px;
-  height: 583px;
   display: flex;
-  padding: 10px 60px;
   gap: 20px;
   align-self: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #latest-news-page .latest-news-cards .card {
@@ -432,8 +420,6 @@ nav .nav-link ul {
 }
 
 #latest-news-page .latest-news-cards .card p {
-  width: 309px;
-  height: 136px;
   font-size: 16px;
 }
 
@@ -449,15 +435,16 @@ nav .nav-link ul {
 
 /*CONTACT US PAGE*/
 #contact-us-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
 }
 
 #contact-us-page .contact-us {
-  width: 1415px;
-  height: 241px;
   background-color: var(--secondary-color);
   display: flex;
-  padding: 50px;
+  width: 100%;
+  padding: 100px 20px;
   align-items: center;
   justify-content: space-around;
   border-radius: 18px;
@@ -474,6 +461,7 @@ nav .nav-link ul {
 }
 
 #contact-us-page .contact-us h1 {
+  width: 75%;
   font-size: 40px;
   font-weight: bold;
   color: var(--tertiary-color);
@@ -481,6 +469,8 @@ nav .nav-link ul {
 
 /*HOME-FOOTER-PAGE*/
 #home-footer-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
   justify-content: space-around;
@@ -516,18 +506,9 @@ nav .nav-link ul {
   font-size: 16px;
 }
 
-/* For extra large monitors (desktop) */
-@media only screen and (min-width: 1920px) {
-  #hero-page {
-    display: grid;
-    grid-template-columns: 707px 562px;
-    gap: 400px;
-  }
-}
-
 /* For tablets and smaller desktop screens */
 /*NAVIGATION BAR*/
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 900px) {
   .navbar-collapse {
     display: inline;
     padding: 0px 10px 0px 10px;
@@ -552,34 +533,19 @@ nav .nav-link ul {
   #hero-page {
     display: flex;
     flex-direction: column;
-    padding: 60px 50px 60px 50px;
+    width: 100%;
   }
 
-  #hero-page .hero-text h1 {
-    font-size: 65px;
-    font-weight: bold;
-    width: auto;
-    height: auto;
+  #hero-page .hero-text {
+    width: 100%;
   }
 
-  #hero-page .hero-text p {
-    color: var(--secondary-color);
-    font-size: 20px;
-    width: 620px;
-    height: 93px;
-  }
-
-  #hero-page .hero-text button {
-    width: 320px;
-    height: 60px;
-    border-radius: 30px;
-    border: none;
-    font-size: 16px;
+  #hero-page .hero-img {
+    width: 100%;
   }
 
   #hero-page .hero-img img {
-    width: 700px;
-    height: 500px;
+    width: 100%;
   }
 
   /*FEATURE PAGE*/
@@ -587,7 +553,6 @@ nav .nav-link ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
   }
 
   /*ABOUT US PAGE*/
@@ -595,49 +560,19 @@ nav .nav-link ul {
   #aboutUs-page {
     display: flex;
     flex-direction: column;
-    padding: 60px;
-    gap: 10px;
+    padding: 10px;
+  }
+
+  #aboutUs-page .aboutUs-img {
+    width: 100%;
   }
 
   #aboutUs-page .aboutUs-img img {
-    width: 650px;
-    height: 444px;
+    width: 100%;
   }
 
   #aboutUs-page .aboutUs-text {
-    display: grid;
-    grid-template-rows: auto auto auto 1fr;
-    row-gap: 30px;
-  }
-
-  #aboutUs-page .aboutUs-text h2 {
-    font-size: 20px;
-  }
-
-  #aboutUs-page .aboutUs-text h1 {
-    font-size: 50px;
-    width: auto;
-    height: auto;
-  }
-
-  #aboutUs-page .aboutUs-text span {
-    font-size: 50px;
-    width: auto;
-    height: 136px;
-  }
-
-  #aboutUs-page .aboutUs-text p {
-    font-size: 20px;
-    width: auto;
-    height: auto;
-  }
-
-  #aboutUs-page .aboutUs-text button {
-    width: 158px;
-    height: 52px;
-    border-radius: 30px;
-    border: none;
-    font-size: 16px;
+    width: 100%;
   }
 
   /*COLLAB SITES PAGE*/
@@ -646,89 +581,23 @@ nav .nav-link ul {
     margin-top: 30px;
   }
 
-  #collab-sites-page .collab-sites {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  #collab-sites-page .collab-sites img {
-    width: 300px;
-    height: 70px;
-  }
-
   /*VIDEO PAGE*/
-  #video-page {
-    padding: 60px;
-    margin-top: 50px;
-  }
-
   #video-page .video img {
-    width: 650px;
-    height: 400px;
+    width: 100%;
   }
 
   /*TESTIMONIAL PAGE*/
   #testimonial-page {
-    padding: 60px;
     display: flex;
     flex-direction: column;
   }
 
   #testimonial-page .testimonial-cards {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    width: auto;
-    height: auto;
-  }
-
-  #testimonial-page .testimonial-cards .card {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    border: none;
-  }
-
-  #testimonial-page .testimonial-cards .card .paragraph {
-    width: auto;
-    height: auto;
-    text-align: justify;
-  }
-
-  #testimonial-page .testimonial-cards .card .paragraph p {
-    font-size: 25px;
+    width: 100%;
   }
 
   #testimonial-page .testimonial-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: auto;
-    height: auto;
-  }
-
-  #testimonial-page .testimonial-text h2 {
-    font-size: 25px;
-  }
-
-  #testimonial-page .testimonial-text h1 {
-    font-size: 60px;
-  }
-
-  #testimonial-page .testimonial-text span {
-    font-size: 60px;
-  }
-
-  #testimonial-page .testimonial-text p {
-    font-size: 25px;
-  }
-
-  #testimonial-page .testimonial-text button {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
+    width: 100%;
   }
 
   /*LATEST NEWS PAGE*/
@@ -738,41 +607,26 @@ nav .nav-link ul {
     gap: 20px;
   }
 
-  #latest-news-page .title h1 {
-    font-size: 35px;
-  }
-
-  #latest-news-page .latest-news-cards {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-  }
-
-  #latest-news-page .latest-news-cards .card .btn-readMore {
-    width: 140px;
-    height: 50px;
-    font-size: 17px;
-  }
-
   /*CONTACT US PAGE*/
   #contact-us-page {
-    padding: 60px;
-  }
-
-  #contact-us-page .contact-us {
-    width: 650px;
-    height: 241px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
+  }
+
+  #contact-us-page .contact-us button {
+    width: 50%;
   }
 
   #contact-us-page .contact-us h1 {
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--tertiary-color);
     text-align: center;
+    width: 100%;
+  }
+
+  #contact-us-page .contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   /*HOME-FOOTER-PAGE*/
@@ -786,7 +640,7 @@ nav .nav-link ul {
 }
 
 /* For mobile devices */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .navbar-collapse {
     display: inline;
     padding: 0px 10px 0px 10px;
@@ -807,48 +661,20 @@ nav .nav-link ul {
     margin-left: 12px;
   }
 
+  /*HERO PAGE*/
   #hero-page {
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding: 10px;
   }
 
   #hero-page .hero-text {
-    padding-top: 150px;
-    display: grid;
-    grid-template-rows: auto 136px 93px 1fr;
+    width: 100%;
   }
 
-  #hero-page .hero-text h2 {
-    color: var(--secondary-color);
-    font-size: 18px;
-  }
-
-  #hero-page .hero-text h1 {
-    font-size: 35px;
-    font-weight: bold;
-    width: auto;
-    height: auto;
-  }
-
-  #hero-page .hero-text p {
-    color: var(--secondary-color);
-    font-size: 16px;
-    width: auto;
-    height: auto;
-  }
-
-  #hero-page .hero-text button {
-    width: 155px;
-    height: 40px;
-    border-radius: 30px;
-    border: none;
-    font-size: 12px;
-  }
-
-  #hero-page .hero-img img {
-    width: 370px;
-    height: 250px;
+  #hero-page .hero-img {
+    width: 100%;
   }
 
   /*FEATURE PAGE*/
@@ -868,44 +694,18 @@ nav .nav-link ul {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    gap: 10px;
+  }
+
+  #aboutUs-page .aboutUs-img {
+    width: 100%;
   }
 
   #aboutUs-page .aboutUs-img img {
-    width: 360px;
-    height: 300px;
+    width: 100%;
   }
 
   #aboutUs-page .aboutUs-text {
-    display: grid;
-    grid-template-rows: auto auto auto 1fr;
-    row-gap: 0px;
-  }
-
-  #aboutUs-page .aboutUs-text h1 {
-    font-size: 35px;
-    width: 340px;
-    height: 100px;
-  }
-
-  #aboutUs-page .aboutUs-text span {
-    font-size: 35px;
-    width: 340px;
-    height: 136px;
-  }
-
-  #aboutUs-page .aboutUs-text p {
-    font-size: 16px;
-    width: auto;
-    height: auto;
-  }
-
-  #aboutUs-page .aboutUs-text button {
-    width: 158px;
-    height: 52px;
-    border-radius: 30px;
-    border: none;
-    font-size: 16px;
+    width: 100%;
   }
 
   /*COLLAB SITES PAGE*/
@@ -914,26 +714,13 @@ nav .nav-link ul {
     margin-top: 30px;
   }
 
-  #collab-sites-page .collab-sites {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  #collab-sites-page .collab-sites img {
-    width: 180px;
-    height: 40px;
-  }
-
   /*VIDEO PAGE*/
   #video-page {
+    margin-top: 40px;
     padding: 10px;
-    margin-top: 50px;
   }
-
   #video-page .video img {
-    width: 370px;
-    height: 300px;
+    width: 100%;
   }
 
   /*TESTIMONIAL PAGE*/
@@ -944,59 +731,13 @@ nav .nav-link ul {
   }
 
   #testimonial-page .testimonial-cards {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0px;
-    width: auto;
-    height: auto;
-  }
-
-  #testimonial-page .testimonial-cards .card {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    border: none;
-  }
-
-  #testimonial-page .testimonial-cards .card .paragraph {
-    width: auto;
-    height: auto;
-    text-align: justify;
-  }
-
-  #testimonial-page .testimonial-cards .card .paragraph p {
-    font-size: 16px;
   }
 
   #testimonial-page .testimonial-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: auto;
-    height: auto;
-  }
-
-  #testimonial-page .testimonial-text h2 {
-    font-size: 20px;
-  }
-
-  #testimonial-page .testimonial-text h1 {
-    font-size: 40px;
-  }
-
-  #testimonial-page .testimonial-text p {
-    font-size: 20px;
-  }
-
-  #testimonial-page .testimonial-text span {
-    font-size: 40px;
-  }
-
-  #testimonial-page .testimonial-text button {
-    width: 158px;
-    height: 52px;
-    font-size: 17px;
+    width: 100%;
   }
 
   /*LATEST NEWS PAGE*/
@@ -1025,22 +766,24 @@ nav .nav-link ul {
 
   /*CONTACT US PAGE*/
   #contact-us-page {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
   }
 
-  #contact-us-page .contact-us {
-    width: 370px;
-    height: 241px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  #contact-us-page .contact-us button {
+    width: 50%;
   }
 
   #contact-us-page .contact-us h1 {
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--tertiary-color);
     text-align: center;
+    width: 100%;
+  }
+
+  #contact-us-page .contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   /*HOME-FOOTER-PAGE*/

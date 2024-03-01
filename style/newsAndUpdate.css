@@ -21,6 +21,8 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px;
+  max-width: 1440px;
+  margin: 0 auto; /* Centers the section horizontally */
 }
 
 .navbar-collapse {
@@ -61,15 +63,12 @@ nav .nav-link ul {
 
 /*LATEST NEWS PAGE*/
 #latest-news-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
   flex-direction: column;
   gap: 60px;
-}
-
-#latest-news-page .title {
-  width: 480px;
-  height: 83px;
 }
 
 #latest-news-page .title h3 {
@@ -84,10 +83,8 @@ nav .nav-link ul {
 }
 
 #latest-news-page .latest-news-cards {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   padding: 10px 60px;
   gap: 20px;
   align-self: center;
@@ -116,8 +113,6 @@ nav .nav-link ul {
 }
 
 #latest-news-page .latest-news-cards .card p {
-  width: 309px;
-  height: 136px;
   font-size: 16px;
 }
 
@@ -133,6 +128,8 @@ nav .nav-link ul {
 
 /*HOME-FOOTER-PAGE*/
 #home-footer-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
   justify-content: space-around;
@@ -167,6 +164,7 @@ nav .nav-link ul {
 #home-footer-page .useful-links p {
   font-size: 16px;
 }
+
 /* For tablets and smaller desktop screens */
 /*NAVIGATION BAR*/
 @media only screen and (max-width: 1023px) {
@@ -195,23 +193,6 @@ nav .nav-link ul {
     margin-top: 100px;
     padding: 60px;
     gap: 20px;
-  }
-
-  #latest-news-page .title h1 {
-    font-size: 35px;
-  }
-
-  #latest-news-page .latest-news-cards {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-  }
-
-  #latest-news-page .latest-news-cards .card .btn-readMore {
-    width: 140px;
-    height: 50px;
-    font-size: 17px;
   }
 
   /*HOME-FOOTER-PAGE*/
@@ -253,22 +234,6 @@ nav .nav-link ul {
     gap: 20px;
   }
 
-  #latest-news-page .title h1 {
-    font-size: 25px;
-  }
-
-  #latest-news-page .latest-news-cards {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-  }
-
-  #latest-news-page .latest-news-cards .card .btn-readMore {
-    width: 110px;
-    height: 40px;
-    font-size: 14px;
-  }
   /*HOME-FOOTER-PAGE*/
   #home-footer-page {
     margin-top: 60px;

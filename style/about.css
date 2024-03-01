@@ -21,6 +21,8 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px;
+  max-width: 1440px;
+  margin: 0 auto; /* Centers the section horizontally */
 }
 
 .navbar-collapse {
@@ -61,18 +63,18 @@ nav .nav-link ul {
 
 /*ABOUT US PAGE */
 #aboutUs-page {
-  height: auto;
-  padding: 55px;
-  display: grid;
-  grid-template-columns: 567px 620px;
-  gap: 120px;
+  max-width: 1440px;
+  margin: auto;
+  padding: 60px;
+  display: flex;
 }
 
 #aboutUs-page .aboutUs-text {
-  padding-top: 60px;
-  display: grid;
-  grid-template-rows: auto 136px 93px 1fr;
-  row-gap: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 #aboutUs-page .aboutUs-text h2 {
@@ -83,24 +85,19 @@ nav .nav-link ul {
 #aboutUs-page .aboutUs-text h1 {
   font-size: 50px;
   font-weight: bold;
-  width: auto;
-  height: 136px;
   color: var(--secondary-color);
 }
 
 #aboutUs-page .aboutUs-text span {
   font-size: 50px;
   font-weight: bold;
-  width: 707px;
-  height: 136px;
+
   color: var(--primary-color);
 }
 
 #aboutUs-page .aboutUs-text p {
   color: var(--secondary-color);
   font-size: 16px;
-  width: 620px;
-  height: 93px;
 }
 
 #aboutUs-page .aboutUs-text button {
@@ -116,14 +113,14 @@ nav .nav-link ul {
   color: var(--tertiary-color);
 }
 
-#aboutUs-page .aboutUs-img img {
-  width: 567px;
-  height: 444px;
+#aboutUs-page .aboutUs-img {
+  width: 50%;
 }
 
 /*FEATURE PAGE*/
-
 #feature-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
   flex-direction: column;
@@ -149,19 +146,15 @@ nav .nav-link ul {
 }
 
 #feature-page .feature-cards {
-  display: grid;
-  grid-template-columns: 305px 483px 305px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #feature-page .feature-cards .cards {
   width: 305px;
   height: 237px;
   gap: 10px;
-}
-
-#feature-page .feature-cards #cards {
-  width: 483px;
-  height: 237px;
+  margin: 60px;
 }
 
 #feature-page .feature-cards .cards {
@@ -193,6 +186,8 @@ nav .nav-link ul {
 
 /* What we offer Page*/
 #whatWeOffer-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
   flex-direction: column;
@@ -217,6 +212,8 @@ nav .nav-link ul {
 #whatWeOffer-page .whatWeoffer-cards {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #whatWeOffer-page .whatWeoffer-cards .card {
@@ -240,29 +237,26 @@ nav .nav-link ul {
 
 /*TESTIMONIAL PAGE*/
 #testimonial-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
-  gap: 80px;
+  gap: 90px;
 }
 
 #testimonial-page .testimonial-cards {
   display: flex;
-  padding: 0px 40px;
-  width: 808px;
-  height: 328px;
+  width: 50%;
 }
 
 #testimonial-page .testimonial-cards .card {
   display: flex;
   width: 326px;
-  height: 315px;
   border: none;
-  margin: 40px;
+  margin: 10px;
 }
 
 #testimonial-page .testimonial-cards .card .paragraph {
-  width: 326px;
-  height: 176px;
   text-align: justify;
 }
 
@@ -275,8 +269,14 @@ nav .nav-link ul {
   gap: 10px;
 }
 
-#testimonial-page .testimonial-cards .card .infos .name {
-  padding-top: 30px;
+#testimonial-page .testimonial-cards .card .infos {
+  display: flex;
+  gap: 10px;
+}
+
+#testimonial-page .testimonial-cards .card .infos img {
+  width: auto;
+  height: auto;
 }
 
 #testimonial-page .testimonial-cards .card .infos h3 {
@@ -288,17 +288,11 @@ nav .nav-link ul {
   font-weight: 200;
 }
 
-#testimonial-page .testimonial-cards .card .infos img {
-  width: 100px;
-  height: 100px;
-}
-
 #testimonial-page .testimonial-text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 506px;
-  height: 416px;
+  width: 50%;
+  gap: 20px;
 }
 
 #testimonial-page .testimonial-text h2 {
@@ -332,6 +326,8 @@ nav .nav-link ul {
 
 /*HOME-FOOTER-PAGE*/
 #home-footer-page {
+  max-width: 1440px;
+  margin: auto;
   padding: 60px;
   display: flex;
   justify-content: space-around;
@@ -367,10 +363,9 @@ nav .nav-link ul {
   font-size: 16px;
 }
 
-
 /* For tablets and smaller desktop screens */
 /*NAVIGATION BAR*/
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 900px) {
   .navbar-collapse {
     display: inline;
     padding: 0px 10px 0px 10px;
@@ -397,49 +392,18 @@ nav .nav-link ul {
     display: flex;
     flex-direction: column;
     padding: 60px;
-    gap: 10px;
-    margin-top: 100px;
+  }
+
+  #aboutUs-page .aboutUs-img {
+    width: 100%;
   }
 
   #aboutUs-page .aboutUs-img img {
-    width: 650px;
-    height: 444px;
+    width: 100%;
   }
 
   #aboutUs-page .aboutUs-text {
-    display: grid;
-    grid-template-rows: auto auto auto 1fr;
-    row-gap: 30px;
-  }
-
-  #aboutUs-page .aboutUs-text h2 {
-    font-size: 20px;
-  }
-
-  #aboutUs-page .aboutUs-text h1 {
-    font-size: 50px;
-    width: auto;
-    height: auto;
-  }
-
-  #aboutUs-page .aboutUs-text span {
-    font-size: 50px;
-    width: auto;
-    height: 136px;
-  }
-
-  #aboutUs-page .aboutUs-text p {
-    font-size: 20px;
-    width: auto;
-    height: auto;
-  }
-
-  #aboutUs-page .aboutUs-text button {
-    width: 158px;
-    height: 52px;
-    border-radius: 30px;
-    border: none;
-    font-size: 16px;
+    width: 100%;
   }
 
   /*FEATURE PAGE*/
@@ -447,81 +411,25 @@ nav .nav-link ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
   }
 
   /* What we offer Page*/
   #whatWeOffer-page {
     margin-top: 50px;
-    padding: 60px;
-  }
-
-  #whatWeOffer-page .whatWeoffer-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 
   /*TESTIMONIAL PAGE*/
   #testimonial-page {
-    padding: 60px;
     display: flex;
     flex-direction: column;
   }
 
   #testimonial-page .testimonial-cards {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    width: auto;
-    height: auto;
-  }
-
-  #testimonial-page .testimonial-cards .card {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    border: none;
-  }
-
-  #testimonial-page .testimonial-cards .card .paragraph {
-    width: auto;
-    height: auto;
-    text-align: justify;
-  }
-
-  #testimonial-page .testimonial-cards .card .paragraph p {
-    font-size: 25px;
+    width: 100%;
   }
 
   #testimonial-page .testimonial-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: auto;
-    height: auto;
-  }
-
-  #testimonial-page .testimonial-text h2 {
-    font-size: 25px;
-  }
-
-  #testimonial-page .testimonial-text h1 {
-    font-size: 60px;
-  }
-
-  #testimonial-page .testimonial-text span {
-    font-size: 60px;
-  }
-
-  #testimonial-page .testimonial-text p {
-    font-size: 25px;
-  }
-
-  #testimonial-page .testimonial-text button {
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
+    width: 100%;
   }
 
   /*HOME-FOOTER-PAGE*/
@@ -535,7 +443,7 @@ nav .nav-link ul {
 }
 
 /* For mobile devices */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .navbar-collapse {
     display: inline;
     padding: 0px 10px 0px 10px;
@@ -562,49 +470,22 @@ nav .nav-link ul {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    gap: 10px;
+  }
+
+  #aboutUs-page .aboutUs-img {
+    width: 100%;
   }
 
   #aboutUs-page .aboutUs-img img {
-    width: 360px;
-    height: 300px;
+    width: 100%;
   }
 
   #aboutUs-page .aboutUs-text {
-    display: grid;
-    grid-template-rows: auto auto auto 1fr;
-    row-gap: 0px;
-  }
-
-  #aboutUs-page .aboutUs-text h1 {
-    font-size: 35px;
-    width: 340px;
-    height: 100px;
-  }
-
-  #aboutUs-page .aboutUs-text span {
-    font-size: 35px;
-    width: 340px;
-    height: 136px;
-  }
-
-  #aboutUs-page .aboutUs-text p {
-    font-size: 16px;
-    width: auto;
-    height: auto;
-  }
-
-  #aboutUs-page .aboutUs-text button {
-    width: 158px;
-    height: 52px;
-    border-radius: 30px;
-    border: none;
-    font-size: 16px;
+    width: 100%;
   }
 
   /*FEATURE PAGE*/
   #feature-page {
-    margin-top: 50px;
     padding: 10px;
   }
 
@@ -613,17 +494,10 @@ nav .nav-link ul {
     flex-direction: column;
     align-items: center;
   }
-
   /* What we offer Page*/
   #whatWeOffer-page {
     margin-top: 50px;
     padding: 10px;
-  }
-
-  #whatWeOffer-page .whatWeoffer-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   /*TESTIMONIAL PAGE*/
@@ -634,59 +508,13 @@ nav .nav-link ul {
   }
 
   #testimonial-page .testimonial-cards {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0px;
-    width: auto;
-    height: auto;
-  }
-
-  #testimonial-page .testimonial-cards .card {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    border: none;
-  }
-
-  #testimonial-page .testimonial-cards .card .paragraph {
-    width: auto;
-    height: auto;
-    text-align: justify;
-  }
-
-  #testimonial-page .testimonial-cards .card .paragraph p {
-    font-size: 16px;
   }
 
   #testimonial-page .testimonial-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: auto;
-    height: auto;
-  }
-
-  #testimonial-page .testimonial-text h2 {
-    font-size: 20px;
-  }
-
-  #testimonial-page .testimonial-text h1 {
-    font-size: 40px;
-  }
-
-  #testimonial-page .testimonial-text p {
-    font-size: 20px;
-  }
-
-  #testimonial-page .testimonial-text span {
-    font-size: 40px;
-  }
-
-  #testimonial-page .testimonial-text button {
-    width: 158px;
-    height: 52px;
-    font-size: 17px;
+    width: 100%;
   }
 
   /*HOME-FOOTER-PAGE*/
