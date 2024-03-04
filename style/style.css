@@ -59,6 +59,11 @@ nav .nav-link ul {
   height: 40px;
   border-radius: 6px;
   margin-right: 100px;
+  border: none;
+}
+
+.login-btn button:hover {
+  background-color: var(--secondary-color);
 }
 
 /*HERO PAGE */
@@ -117,10 +122,19 @@ nav .nav-link ul {
   color: var(--tertiary-color);
 }
 
+#hero-page .hero-text .primary-color-btn:hover {
+  background-color: var(--secondary-color);
+}
+
 #hero-page .hero-text .tertiary-color-btn {
   background-color: var(--tertiary-color);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+#hero-page .hero-text .tertiary-color-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 #hero-page .hero-img {
@@ -171,6 +185,11 @@ nav .nav-link ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#feature-page .feature-cards .cards:hover {
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 #feature-page .feature-cards .cards img {
@@ -239,6 +258,9 @@ nav .nav-link ul {
   border-radius: 30px;
   border: none;
   font-size: 16px;
+}
+#aboutUs-page .aboutUs-text button:hover {
+  background-color: var(--secondary-color);
 }
 
 #aboutUs-page .aboutUs-text .primary-color-btn {
@@ -369,6 +391,10 @@ nav .nav-link ul {
   color: var(--tertiary-color);
 }
 
+#testimonial-page .testimonial-text button:hover {
+  background-color: var(--secondary-color);
+}
+
 /*LATEST NEWS PAGE*/
 #latest-news-page {
   max-width: 1440px;
@@ -433,6 +459,10 @@ nav .nav-link ul {
   color: var(--tertiary-color);
 }
 
+#latest-news-page .latest-news-cards .card .btn-readMore:hover {
+  background-color: var(--secondary-color);
+}
+
 /*CONTACT US PAGE*/
 #contact-us-page {
   max-width: 1440px;
@@ -458,6 +488,11 @@ nav .nav-link ul {
   border-radius: 30px;
   border: none;
   font-size: 16px;
+}
+
+#contact-us-page .contact-us button:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 #contact-us-page .contact-us h1 {
@@ -489,6 +524,7 @@ nav .nav-link ul {
   display: flex;
   gap: 10px;
 }
+
 
 #home-footer-page .company h3 {
   font-size: 20px;

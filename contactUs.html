@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="style/contactUs.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Contact Us</title>
 </head>
 
@@ -49,10 +50,10 @@
     </header>
 
     <section id="getInTouch-page">
-        <div class="image">
+        <div class="image" data-aos="fade-up" data-aos-duration="1500">
             <img src="assets/aboutUs.png" alt="">
         </div>
-        <div class="form">
+        <div class="form" data-aos="fade-down" data-aos-duration="1500">
             <h1>Get in Touch With Us</h1>
             <form action="">
                 <input id="fullname" type="text" placeholder="Full Name">
@@ -66,23 +67,23 @@
 
     <section id="contactUs-cards">
         <div class="cards">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1500">
                 <img src="assets/contactUs-email.jpg" alt="">
                 <h3>Email</h3>
                 <p>(51) 123-123456</p>
                 <p>(51) 123-123456</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1500">
                 <img src="assets/contactUs-map.jpg" alt="">
                 <h3>Address</h3>
                 <p>talentus@gmail.com</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1500">
                 <img src="assets/contactUs-hours.jpg" alt="">
                 <h3>Working Hours</h3>
                 <p>Rockwell Center, 5/F Phinma Plaza, 39 Plaza Dr, Makati, 1200 Metro Manila</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1500">
                 <img src="assets/contactUs-call.jpg" alt="">
                 <h3>Phone</h3>
                 <p>(09) 123-123456</p>
@@ -126,6 +127,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
