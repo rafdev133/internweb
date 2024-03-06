@@ -335,9 +335,11 @@ nav .nav-link ul {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    padding-top: 200px;
   }
 
   #getInTouch-page .image img {
+    margin-top: 50px;
     width: 370px;
     height: 300px;
   }

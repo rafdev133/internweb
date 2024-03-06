@@ -170,8 +170,8 @@ nav .nav-link ul {
 }
 
 #feature-page .feature-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #feature-page .feature-cards .cards {
@@ -417,11 +417,9 @@ nav .nav-link ul {
 }
 
 #latest-news-page .latest-news-cards {
-  display: flex;
-  gap: 20px;
-  align-self: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 #latest-news-page .latest-news-cards .card {
@@ -525,7 +523,6 @@ nav .nav-link ul {
   gap: 10px;
 }
 
-
 #home-footer-page .company h3 {
   font-size: 20px;
 }
@@ -544,7 +541,7 @@ nav .nav-link ul {
 
 /* For tablets and smaller desktop screens */
 /*NAVIGATION BAR*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 990px) {
   .navbar-collapse {
     display: inline;
     padding: 0px 10px 0px 10px;
@@ -586,9 +583,15 @@ nav .nav-link ul {
 
   /*FEATURE PAGE*/
   #feature-page .feature-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #feature-page .feature-cards .cards {
+    width: 305px;
+    height: 237px;
+    gap: 0px;
+    margin: 20px;
   }
 
   /*ABOUT US PAGE*/
@@ -596,7 +599,7 @@ nav .nav-link ul {
   #aboutUs-page {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 60px;
   }
 
   #aboutUs-page .aboutUs-img {
@@ -643,19 +646,30 @@ nav .nav-link ul {
     gap: 20px;
   }
 
+  #latest-news-page .latest-news-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #latest-news-page .latest-news-cards .card {
+    width: 320px;
+    height: 543px;
+  }
+
   /*CONTACT US PAGE*/
   #contact-us-page {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 60px;
   }
 
   #contact-us-page .contact-us button {
-    width: 50%;
+    width: 200px;
   }
 
   #contact-us-page .contact-us h1 {
     text-align: center;
+    font-size: 35px;
     width: 100%;
   }
 
@@ -703,6 +717,7 @@ nav .nav-link ul {
     flex-direction: column;
     width: 100%;
     padding: 10px;
+    padding-top: 80px;
   }
 
   #hero-page .hero-text {
@@ -719,9 +734,8 @@ nav .nav-link ul {
   }
 
   #feature-page .feature-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   /*ABOUT US PAGE*/
@@ -781,10 +795,17 @@ nav .nav-link ul {
     margin-top: 50px;
     padding: 10px;
     gap: 20px;
+    align-items: center;
   }
 
-  #latest-news-page .title h1 {
-    font-size: 25px;
+  #latest-news-page .latest-news-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #latest-news-page .latest-news-cards .card {
+    width: 320px;
+    height: 543px;
   }
 
   #latest-news-page .latest-news-cards {
@@ -807,13 +828,18 @@ nav .nav-link ul {
     padding: 10px;
   }
 
+  #contact-us-page .contact-us {
+    padding: 50px 10px;
+  }
+
   #contact-us-page .contact-us button {
-    width: 50%;
+    width: 200px;
   }
 
   #contact-us-page .contact-us h1 {
     text-align: center;
     width: 100%;
+    font-size: 30px;
   }
 
   #contact-us-page .contact-us {

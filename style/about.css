@@ -154,8 +154,9 @@ nav .nav-link ul {
 }
 
 #feature-page .feature-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
 }
 
 #feature-page .feature-cards .cards {
@@ -424,10 +425,19 @@ nav .nav-link ul {
   }
 
   /*FEATURE PAGE*/
+  #feature-page {
+    padding: 60px;
+  }
+
   #feature-page .feature-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #feature-page .feature-cards .cards {
+    width: 305px;
+    height: 237px;
+    margin: 20px;
   }
 
   /* What we offer Page*/
@@ -487,6 +497,7 @@ nav .nav-link ul {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-top: 140px;
   }
 
   #aboutUs-page .aboutUs-img {
@@ -507,10 +518,10 @@ nav .nav-link ul {
   }
 
   #feature-page .feature-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
+
   /* What we offer Page*/
   #whatWeOffer-page {
     margin-top: 50px;
