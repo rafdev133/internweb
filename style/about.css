@@ -71,6 +71,8 @@ nav .nav-link ul {
   margin: auto;
   padding: 60px;
   display: flex;
+  background-image: url(/internweb/assets/w1.jpg);
+  background-size: cover;
 }
 
 #aboutUs-page .aboutUs-text {
@@ -134,6 +136,8 @@ nav .nav-link ul {
   flex-direction: column;
   align-items: center;
   gap: 60px;
+  background-image: url(/internweb/assets/w2.jpg);
+  background-size: cover;
 }
 
 #feature-page .feature-text {
@@ -205,6 +209,8 @@ nav .nav-link ul {
   padding: 60px;
   display: flex;
   flex-direction: column;
+  background-image: url(/internweb/assets/w3.jpg);
+  background-size: cover;
 }
 
 #whatWeOffer-page .whatWeOffer-text {
@@ -256,6 +262,8 @@ nav .nav-link ul {
   padding: 60px;
   display: flex;
   gap: 90px;
+  background-image: url(/internweb/assets/w4.jpg);
+  background-size: cover;
 }
 
 #testimonial-page .testimonial-cards {
@@ -349,6 +357,8 @@ nav .nav-link ul {
   padding: 60px;
   display: flex;
   justify-content: space-around;
+  background-image: url(/internweb/assets/w5.jpg);
+  background-size: cover;
 }
 
 #home-footer-page .logo h1 {

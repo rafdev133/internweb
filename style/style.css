@@ -13,6 +13,8 @@ html {
   font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
+  background-image: url(/internweb/assets/wallpaper.jpg);
+  background-size: cover;
 }
 
 /*NAVIGATION BAR*/
@@ -75,6 +77,8 @@ nav .nav-link ul {
   width: 100%;
   padding: 60px;
   gap: 80px;
+  background-image: url(/internweb/assets/wallpaper.jpg);
+  background-size: cover;
 }
 
 #hero-page .hero-text {
@@ -141,6 +145,10 @@ nav .nav-link ul {
   width: 50%;
 }
 
+#hero-page .hero-img img {
+  width: 100%;
+}
+
 /*FEATURE PAGE*/
 #feature-page {
   max-width: 1440px;
@@ -150,6 +158,8 @@ nav .nav-link ul {
   flex-direction: column;
   align-items: center;
   gap: 60px;
+  background-image: url(/internweb/assets/wallpaper\ 3.jpg);
+  background-size: cover;
 }
 
 #feature-page .feature-text {
@@ -219,6 +229,8 @@ nav .nav-link ul {
   margin: auto;
   padding: 60px;
   display: flex;
+  background-image: url(/internweb/assets/wallpaper\ 4.jpg);
+  background-size: cover;
 }
 
 #aboutUs-page .aboutUs-text {
@@ -272,11 +284,16 @@ nav .nav-link ul {
   width: 50%;
 }
 
+#aboutUs-page .aboutUs-img img {
+  width: 100%;
+}
 /*COLLAB SITES PAGE*/
 #collab-sites-page {
   max-width: 1440px;
   margin: auto;
   padding: 60px;
+  background-image: url(/internweb/assets/walpaper5.jpg);
+  background-size: cover;
 }
 
 #collab-sites-page .collab-sites {
@@ -287,8 +304,7 @@ nav .nav-link ul {
 }
 
 #collab-sites-page .collab-sites img {
-  width: 246px;
-  height: 60px;
+  width: 25%;
 }
 
 /*VIDEO PAGE*/
@@ -297,6 +313,8 @@ nav .nav-link ul {
   margin: auto;
   padding: 60px;
   height: 800px;
+  background-image: url(/internweb/assets/wallpaper\ 6.jpg);
+  background-size: cover;
 }
 
 #video-page .video {
@@ -311,6 +329,8 @@ nav .nav-link ul {
   padding: 60px;
   display: flex;
   gap: 90px;
+  background-image: url(/internweb/assets/wallpaper\ 7.jpg);
+  background-size: cover;
 }
 
 #testimonial-page .testimonial-cards {
@@ -405,6 +425,8 @@ nav .nav-link ul {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  background-image: url(/internweb/assets/wallpaper\ 8.jpg);
+  background-size: cover;
 }
 
 #latest-news-page .title h3 {
@@ -468,10 +490,13 @@ nav .nav-link ul {
   max-width: 1440px;
   margin: auto;
   padding: 60px;
+  background-image: url(/internweb/assets/wallpaper\ 10.jpg);
+  background-size: cover;
 }
 
 #contact-us-page .contact-us {
-  background-color: var(--secondary-color);
+  background-image: url(/internweb/assets/wallpaper\ 2.jpg);
+  background-size: cover;
   display: flex;
   width: 100%;
   padding: 100px 20px;
@@ -509,6 +534,8 @@ nav .nav-link ul {
   padding: 60px;
   display: flex;
   justify-content: space-around;
+  background-image: url(/internweb/assets/wallpaper\ 11.jpg);
+  background-size: cover;
 }
 
 #home-footer-page .logo h1 {
@@ -523,6 +550,10 @@ nav .nav-link ul {
 #home-footer-page .social-media .social-media-icon {
   display: flex;
   gap: 10px;
+}
+
+#home-footer-page .social-media .social-media-icon img {
+  width: 25%;
 }
 
 #home-footer-page .company h3 {
