@@ -272,6 +272,10 @@ nav .nav-link ul {
   width: 50%;
 }
 
+#aboutUs-page .aboutUs-img img {
+  width: 100%;
+}
+
 /*COLLAB SITES PAGE*/
 #collab-sites-page {
   max-width: 1440px;
