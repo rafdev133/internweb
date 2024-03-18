@@ -15,56 +15,6 @@ html {
   margin: 0;
 }
 
-/*NAVIGATION BAR*/
-.navbar {
-  padding: 0px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  max-width: 1440px;
-  margin: 0 auto; /* Centers the section horizontally */
-}
-
-.navbar-collapse {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 60px 30px 60px;
-  width: 1440px;
-  height: 89px;
-}
-
-.navbar-brand {
-  font: 29px;
-}
-
-#active-link {
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-
-#notActive-link {
-  color: var(--secondary-color);
-}
-
-nav .nav-link ul {
-  gap: 40px;
-}
-
-.login-btn button {
-  background-color: var(--primary-color);
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--tertiary-color);
-  width: 130px;
-  height: 40px;
-  border-radius: 6px;
-  margin-right: 100px;
-}
-
-.login-btn button:hover {
-  background-color: var(--secondary-color);
-}
-
 /*LATEST NEWS PAGE*/
 #latest-news-page {
   max-width: 1440px;

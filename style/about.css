@@ -15,56 +15,6 @@ html {
   margin: 0;
 }
 
-/*NAVIGATION BAR*/
-.navbar {
-  padding: 0px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  max-width: 1440px;
-  margin: 0 auto; /* Centers the section horizontally */
-}
-
-.navbar-collapse {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 60px 30px 60px;
-  width: 1440px;
-  height: 89px;
-}
-
-.navbar-brand {
-  font: 29px;
-}
-
-#active-link {
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-
-#notActive-link {
-  color: var(--secondary-color);
-}
-
-nav .nav-link ul {
-  gap: 40px;
-}
-
-.login-btn button {
-  background-color: var(--primary-color);
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--tertiary-color);
-  width: 130px;
-  height: 40px;
-  border-radius: 6px;
-  margin-right: 100px;
-}
-
-.login-btn button:hover {
-  background-color: var(--secondary-color);
-}
-
 /*ABOUT US PAGE */
 #aboutUs-page {
   max-width: 1440px;
@@ -346,45 +296,6 @@ nav .nav-link ul {
   background-color: var(--secondary-color);
 }
 
-/*HOME-FOOTER-PAGE*/
-#home-footer-page {
-  max-width: 1440px;
-  margin: auto;
-  padding: 60px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#home-footer-page .logo h1 {
-  font-size: 28px;
-}
-
-#home-footer-page .social-media h3 {
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-
-#home-footer-page .social-media .social-media-icon {
-  display: flex;
-  gap: 10px;
-}
-
-#home-footer-page .company h3 {
-  font-size: 20px;
-}
-
-#home-footer-page .company p {
-  font-size: 14px;
-}
-
-#home-footer-page .useful-links h3 {
-  font-size: 20px;
-}
-
-#home-footer-page .useful-links p {
-  font-size: 16px;
-}
-
 /* For tablets and smaller desktop screens */
 /*NAVIGATION BAR*/
 @media only screen and (max-width: 900px) {
@@ -462,15 +373,6 @@ nav .nav-link ul {
   #testimonial-page .testimonial-text {
     width: 100%;
   }
-
-  /*HOME-FOOTER-PAGE*/
-  #home-footer-page {
-    margin-top: 60px;
-    padding: 60px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 50px;
-  }
 }
 
 /* For mobile devices */
@@ -547,15 +449,5 @@ nav .nav-link ul {
 
   #testimonial-page .testimonial-text {
     width: 100%;
-  }
-
-  /*HOME-FOOTER-PAGE*/
-  #home-footer-page {
-    margin-top: 60px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 70px;
   }
 }

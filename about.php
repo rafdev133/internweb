@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,41 +16,11 @@
 
 <body>
     <header>
-        <nav>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <div class="logo">
-                        <a class="navbar-brand" href="#">logo</a>
-                    </div>
-                    <div class="nav-link">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html" id="notActive-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html" id="active-link">About<span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="newsAndUpdate.html" id="notActive-link">News &
-                                    Updates</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactUs.html" id="notActive-link">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="login-btn">
-                        <button>Login</button>
-                    </div>
-                </div>
-            </nav>
-        </nav>
+        <?php
+            include "include/navbar.php";
+        ?>
     </header>
+        
 
     <section id="aboutUs-page">
         <div class="aboutUs-img" data-aos="fade-right" data-aos-duration="1000">
@@ -163,39 +136,10 @@
         </div>
     </section>
 
-    <section id="home-footer-page">
-        <div class="logo">
-            <h1>logo</h1>
-        </div>
-        <div class="social-media">
-            <h3>Find us in Social Media</h3>
-            <div class="social-media-icon">
-                <a href="#">
-                    <img src="assets/indeed-footer.jpg" alt="">
-                </a>
-                <a href="#">
-                    <img src="assets/fb-footer.jpg" alt="">
-                </a>
-                <a href="#">
-                    <img src="assets/ig-footer.jpg" alt="">
-                </a>
-                <a href="#">
-                    <img src="assets/twitter-footer.jpg" alt="">
-                </a>
-
-            </div>
-        </div>
-        <div class="company">
-            <h3>Company</h3>
-            <p><a href="#">example@gmail.com</a></p>
-            <p><a href="#">(01)345-1234556</a></p>
-        </div>
-        <div class="useful-links">
-            <h3>Useful Links</h3>
-            <p><a href="index.html">Home</a></p>
-            <p><a href="about.html">About Us</a></p>
-            <p><a href="newsAndUpdate.html">News & Updates</a></p>
-        </div>
+    <section>
+            <?php
+                include "include/footer.php";
+            ?>
     </section>
 
 
@@ -209,3 +153,4 @@
 </body>
 
 </html>
+

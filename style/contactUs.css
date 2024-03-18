@@ -193,45 +193,6 @@ nav .nav-link ul {
   text-align: center;
 }
 
-/*HOME-FOOTER-PAGE*/
-#home-footer-page {
-  max-width: 1440px;
-  margin: auto;
-  padding: 60px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#home-footer-page .logo h1 {
-  font-size: 28px;
-}
-
-#home-footer-page .social-media h3 {
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-
-#home-footer-page .social-media .social-media-icon {
-  display: flex;
-  gap: 10px;
-}
-
-#home-footer-page .company h3 {
-  font-size: 20px;
-}
-
-#home-footer-page .company p {
-  font-size: 14px;
-}
-
-#home-footer-page .useful-links h3 {
-  font-size: 20px;
-}
-
-#home-footer-page .useful-links p {
-  font-size: 16px;
-}
-
 /* ABOUT US MAP PAGE */
 
 #aboutUs-map-page {
@@ -292,15 +253,6 @@ nav .nav-link ul {
   /* ABOUT US MAP PAGE */
   #aboutUs-map-page {
     padding: 60px;
-  }
-
-  /*HOME-FOOTER-PAGE*/
-  #home-footer-page {
-    margin-top: 60px;
-    padding: 60px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 50px;
   }
 }
 
@@ -395,15 +347,5 @@ nav .nav-link ul {
   /* ABOUT US MAP PAGE */
   #aboutUs-map-page {
     padding: 10px;
-  }
-
-  /*HOME-FOOTER-PAGE*/
-  #home-footer-page {
-    margin-top: 60px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 70px;
   }
 }
