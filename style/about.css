@@ -403,7 +403,6 @@ html {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    padding-top: 140px;
   }
 
   #aboutUs-page .aboutUs-img {
