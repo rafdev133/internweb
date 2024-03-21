@@ -7,97 +7,119 @@
   --tertiary-color: #ffffff;
 }
 
-/*NAVIGATION BAR*/
-.navbar {
-  padding: 0px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  max-width: 1440px;
-  margin: 0 auto; /* Centers the section horizontally */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-collapse {
+body {
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 30px 60px 30px 60px;
-  width: 1440px;
-  height: 89px;
+  align-items: center;
+  padding: 0 20px; /* Adjust padding to fit content */
 }
 
-.navbar-brand {
-  font: 29px;
+nav .logo {
+  font-size: 25px;
 }
 
-#active-link {
-  color: var(--primary-color);
+nav .hideOnMobile {
+  align-content: center;
+}
+nav li {
+  height: 70px;
 }
 
-#notActive-link {
-  color: var(--secondary-color);
+nav a {
+  height: 100%;
+  padding: 0 15px; /* Adjust padding to fit content */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
 }
 
-nav .nav-link ul {
-  gap: 40px;
+nav a:hover {
+  background-color: #f0f0f0;
 }
 
-.login-btn button {
-  background-color: var(--primary-color);
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--tertiary-color);
+nav li:first-child {
+  margin-right: auto;
+}
+
+nav ul li button {
+  border-radius: 6px;
   width: 130px;
   height: 40px;
-  border-radius: 6px;
-  margin-right: 100px;
-  border: none;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  margin-left: 10px;
 }
 
-.login-btn button:hover {
-  background-color: var(--secondary-color);
+nav .active a {
+  text-decoration: underline;
 }
 
-/* For mobile devices */
-@media only screen and (max-width: 600px) {
-  .navbar-collapse {
-    display: inline;
-    padding: 0px 10px 0px 10px;
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 50%;
   }
 
-  nav .nav-link ul {
-    gap: 0px;
+  .hideOnMobile {
+    display: none;
   }
-
-  .login-btn button {
-    background-color: var(--primary-color);
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--tertiary-color);
-    width: 100x;
-    height: 30px;
-    border-radius: 6px;
-    margin-left: 12px;
+  .menu-button {
+    display: block;
+  }
+  nav ul {
+    justify-content: center;
+    padding: 0; /* Remove padding to fit centered content */
   }
 }
 
-@media only screen and (max-width: 990px) {
-  .navbar-collapse {
-    display: inline;
-    padding: 0px 10px 0px 10px;
-  }
-
-  nav .nav-link ul {
-    gap: 0px;
-  }
-
-  .login-btn button {
-    background-color: var(--primary-color);
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--tertiary-color);
-    width: 100x;
-    height: 30px;
-    border-radius: 6px;
-    margin-left: 12px;
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
   }
 }

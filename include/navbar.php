@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="includeStyles/navbar.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="includeStyles/navbar.css">
 </head>
 <body>
-<nav>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <div class="logo">
-                        <a class="navbar-brand" href="#">logo</a>
-                    </div>
-                    <div class="nav-link">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.php" id="notActive-link" >Home<span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.php" id="notActive-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="newsAndUpdate.php" id="notActive-link">News &
-                                    Updates</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contactUs.php" id="notActive-link">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="login-btn">
-                        <button>Login</button>
-                    </div>
-                </div>
-            </nav>
-        </nav>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="about.php">About Us</a></li>
+      <li><a href="contactUs.php">Contact Us</a></li>
+      <li><a href="newsAndUpdate.php">News & Updates</a></li>
+      <li><button>Login</button></li>
+    </ul>
+    <ul>
+      <li class="logo"><a href="#">logo</a></li>
+      <li class="hideOnMobile"><a href="index.php">Home</a></li>
+      <li class="hideOnMobile"><a href="about.php">About Us</a></li>
+      <li class="hideOnMobile"><a href="contactUs.php">Contact Us</a></li>
+      <li class="hideOnMobile"><a href="newsAndUpdate.php">News & Update</a></li>
+      <li class="hideOnMobile"><button>Login</button></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const currentPageUrl = window.location.href;
+      const navLinks = document.querySelectorAll('nav a');
+
+      navLinks.forEach(link => {
+        if (link.href === currentPageUrl) {
+          link.parentElement.classList.add('active');
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
-

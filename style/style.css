@@ -455,7 +455,6 @@ html {
   color: var(--tertiary-color);
 }
 
-
 /* For tablets and smaller desktop screens */
 /*NAVIGATION BAR*/
 @media only screen and (max-width: 990px) {
@@ -575,8 +574,6 @@ html {
     flex-direction: column;
     gap: 30px;
   }
-
-  
 }
 
 /* For mobile devices */
@@ -717,6 +714,4 @@ html {
     flex-direction: column;
     gap: 30px;
   }
-
-  
 }
