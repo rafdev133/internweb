@@ -40,9 +40,9 @@
             </div>
             <div class="useful-links">
                 <h3>Useful Links</h3>
-                <p><a href="index.html">Home</a></p>
-                <p><a href="about.html">About Us</a></p>
-                <p><a href="newsAndUpdate.html">News & Updates</a></p>
+                <p><a href="index.php">Home</a></p>
+                <p><a href="about.php">About Us</a></p>
+                <p><a href="newsAndUpdate.php">News & Updates</a></p>
             </div>
         </section>
 </body>
