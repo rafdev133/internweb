@@ -20,49 +20,17 @@
             include "include/navbar.php";
         ?>
     </header>
-        
 
-    <section id="aboutUs-page">
-        <div class="aboutUs-img" data-aos="fade-right" data-aos-duration="1000">
-            <img src="assets/aboutUs.png" alt="hero-image">
-        </div>
-        <div class="aboutUs-text" data-aos="fade-left" data-aos-duration="1000">
-            <h2>About Us</h2>
-            <h1>Connecting Talent with <span>Opportunity</span></h1>
-            <p>At Talent Us Inc., we are more than just a recruitment agency – we are your dedicated partners in
-                success. Our mission is to empower job seekers and employers by providing exceptional, personalized,
-                and innovative recruitment solutions. Here's what sets us apart</p>
-            <div class="button">
-                <button class="primary-color-btn">Get Started</button>
-            </div>
-        </div>
+    <section>
+                <?php
+                    include "include/aboutUs.php";
+                ?>
     </section>
 
-    <section id="feature-page">
-        <div class="feature-text">
-            <h3>Feature</h3>
-            <h1>What We Offer</h1>
-        </div>
-        <div class="feature-cards">
-            <div class="cards">
-                <img src="assets/feature-image.jpg" alt="">
-                <h2>Feature</h2>
-                <p>Welcome to Talent Us Inc., where we make the perfect match between exceptional talent and the
-                    companies that need them.</p>
-            </div>
-            <div class="cards" id="cards">
-                <img src="assets/primary-feature-image.jpg" alt="">
-                <h2>Feature</h2>
-                <p>Welcome to Talent Us Inc., where we make the perfect match between exceptional talent and the
-                    companies that need them.</p>
-            </div>
-            <div class="cards">
-                <img src="assets/feature-image.jpg" alt="">
-                <h2>Feature</h2>
-                <p>Welcome to Talent Us Inc., where we make the perfect match between exceptional talent and the
-                    companies that need them.</p>
-            </div>
-        </div>
+    <section>
+                <?php
+                    include "include/whatWeOffer.php";
+                ?>
     </section>
 
     <section id="whatWeOffer-page" data-aos="fade-down" data-aos-duration="1000">
@@ -94,47 +62,12 @@
         </div>
     </section>
 
-    <section id="testimonial-page">
-        <div class="testimonial-cards" data-aos="fade-right" data-aos-duration="1000">
-            <div class="card">
-                <div class="paragraph">
-                    <p>
-                        Working with Talent Us Inc. was a game-changer for me. They not only helped me land a
-                        fantastic
-                        job but also provided valuable interview coaching and resume advice. Their dedication to my
-                        success was evident every step of the way
-                    </p>
-                </div>
-                <div class="infos">
-                    <img src="assets/testimonial-pic-cards.jpg" alt="">
-                    <div class="name">
-                        <h3>Juan Bautista</h3>
-                        <h5>Upwork CEO</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="paragraph">
-                    <p>The team at Talent Us Inc. is phenomenal. They didn't just find me a job; they found me a
-                        career that I'm passionate about. I couldn't be happier with their support and guidance</p>
-                </div>
-                <div class="infos">
-                    <img src="assets/testimonial-pic-cards.jpg" alt="">
-                    <div class="name">
-                        <h3>Juan Bautista</h3>
-                        <h5>Upwork CEO</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-text" data-aos="fade-left" data-aos-duration="1000">
-            <h2>Testimonial</h2>
-            <h1>What's Our <span>Client Say About Us</span></h1>
-            <p>At Talent Us Inc., our success is measured by the success and satisfaction of our clients and
-                candidates. Here's what some of them have to say about their experiences working with us</p>
-            <button>Read More</button>
-        </div>
+    <section>
+            <?php
+                include "include/testimonial.php";
+            ?>
     </section>
+
 
     <section>
             <?php

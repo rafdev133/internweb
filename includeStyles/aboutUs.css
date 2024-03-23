@@ -1,0 +1,109 @@
+/*ABOUT US PAGE */
+#aboutUs-page {
+  max-width: 1440px;
+  margin: auto;
+  padding: 60px;
+  display: flex;
+}
+
+#aboutUs-page .aboutUs-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+#aboutUs-page .aboutUs-text h2 {
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+#aboutUs-page .aboutUs-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+#aboutUs-page .aboutUs-text span {
+  font-size: 50px;
+  font-weight: bold;
+
+  color: var(--primary-color);
+}
+
+#aboutUs-page .aboutUs-text p {
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+
+#aboutUs-page .aboutUs-text button {
+  width: 158px;
+  height: 52px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+}
+
+#aboutUs-page .aboutUs-text button:hover {
+  background-color: var(--secondary-color);
+}
+
+#aboutUs-page .aboutUs-text .primary-color-btn {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+#aboutUs-page .aboutUs-img {
+  width: 50%;
+}
+
+#aboutUs-page .aboutUs-img img {
+  width: 100%;
+}
+
+/* For tablets and smaller desktop screens */
+@media only screen and (max-width: 900px) {
+  /*ABOUT US PAGE*/
+
+  #aboutUs-page {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+  }
+
+  #aboutUs-page .aboutUs-img {
+    width: 100%;
+  }
+
+  #aboutUs-page .aboutUs-img img {
+    width: 100%;
+  }
+
+  #aboutUs-page .aboutUs-text {
+    width: 100%;
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+  /*ABOUT US PAGE*/
+
+  #aboutUs-page {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #aboutUs-page .aboutUs-img {
+    width: 100%;
+  }
+
+  #aboutUs-page .aboutUs-img img {
+    width: 100%;
+  }
+
+  #aboutUs-page .aboutUs-text {
+    width: 100%;
+  }
+}

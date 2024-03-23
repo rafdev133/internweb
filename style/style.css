@@ -90,77 +90,6 @@ html {
   width: 50%;
 }
 
-/*FEATURE PAGE*/
-#feature-page {
-  max-width: 1440px;
-  margin: auto;
-  padding: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-}
-
-#feature-page .feature-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#feature-page .feature-text h3 {
-  font-size: 20px;
-  color: var(--secondary-color);
-}
-
-#feature-page .feature-text h1 {
-  font-size: 35px;
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-#feature-page .feature-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-#feature-page .feature-cards .cards {
-  width: 305px;
-  height: 237px;
-  gap: 10px;
-  margin: 60px;
-}
-
-#feature-page .feature-cards .cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#feature-page .feature-cards .cards:hover {
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-#feature-page .feature-cards .cards img {
-  width: 73px;
-  height: 73px;
-}
-
-#feature-page .feature-cards .cards h2 {
-  font-size: 20px;
-  width: 75px;
-  height: 30px;
-  text-align: center;
-  color: var(--primary-color);
-}
-
-#feature-page .feature-cards .cards p {
-  font-size: 16px;
-  width: 305px;
-  height: 95px;
-  text-align: center;
-  color: var(--secondary-color);
-}
 
 /*ABOUT US PAGE */
 #aboutUs-page {
@@ -257,98 +186,7 @@ html {
   height: 100%;
 }
 
-/*TESTIMONIAL PAGE*/
-#testimonial-page {
-  max-width: 1440px;
-  margin: auto;
-  padding: 60px;
-  display: flex;
-  gap: 90px;
-}
 
-#testimonial-page .testimonial-cards {
-  display: flex;
-  width: 50%;
-}
-
-#testimonial-page .testimonial-cards .card {
-  display: flex;
-  width: 326px;
-  border: none;
-  margin: 10px;
-}
-
-#testimonial-page .testimonial-cards .card .paragraph {
-  text-align: justify;
-}
-
-#testimonial-page .testimonial-cards .card .paragraph p {
-  font-size: 16px;
-}
-
-#testimonial-page .testimonial-cards .card .infos {
-  display: flex;
-  gap: 10px;
-}
-
-#testimonial-page .testimonial-cards .card .infos {
-  display: flex;
-  gap: 10px;
-}
-
-#testimonial-page .testimonial-cards .card .infos img {
-  width: auto;
-  height: auto;
-}
-
-#testimonial-page .testimonial-cards .card .infos h3 {
-  font-size: 20px;
-}
-
-#testimonial-page .testimonial-cards .card .infos h5 {
-  font-size: 16px;
-  font-weight: 200;
-}
-
-#testimonial-page .testimonial-text {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  gap: 20px;
-}
-
-#testimonial-page .testimonial-text h2 {
-  font-size: 20px;
-}
-
-#testimonial-page .testimonial-text h1 {
-  font-size: 50px;
-  font-weight: bold;
-  color: var(--secondary-color);
-}
-
-#testimonial-page .testimonial-text span {
-  font-size: 50px;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-#testimonial-page .testimonial-text p {
-  font-size: 16px;
-}
-
-#testimonial-page .testimonial-text button {
-  width: 158px;
-  height: 52px;
-  border-radius: 30px;
-  border: none;
-  background-color: var(--primary-color);
-  color: var(--tertiary-color);
-}
-
-#testimonial-page .testimonial-text button:hover {
-  background-color: var(--secondary-color);
-}
 
 /*LATEST NEWS PAGE*/
 #latest-news-page {
@@ -477,18 +315,7 @@ html {
     width: 100%;
   }
 
-  /*FEATURE PAGE*/
-  #feature-page .feature-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #feature-page .feature-cards .cards {
-    width: 305px;
-    height: 237px;
-    gap: 0px;
-    margin: 20px;
-  }
+ 
 
   /*ABOUT US PAGE*/
 
@@ -521,19 +348,7 @@ html {
     width: 100%;
   }
 
-  /*TESTIMONIAL PAGE*/
-  #testimonial-page {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #testimonial-page .testimonial-cards {
-    width: 100%;
-  }
-
-  #testimonial-page .testimonial-text {
-    width: 100%;
-  }
+  
 
   /*LATEST NEWS PAGE*/
   #latest-news-page {
@@ -594,15 +409,6 @@ html {
     width: 100%;
   }
 
-  /*FEATURE PAGE*/
-  #feature-page {
-    padding: 10px;
-  }
-
-  #feature-page .feature-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
 
   /*ABOUT US PAGE*/
 
@@ -639,22 +445,7 @@ html {
     width: 100%;
   }
 
-  /*TESTIMONIAL PAGE*/
-  #testimonial-page {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
 
-  #testimonial-page .testimonial-cards {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #testimonial-page .testimonial-text {
-    width: 100%;
-  }
 
   /*LATEST NEWS PAGE*/
   #latest-news-page {
