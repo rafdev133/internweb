@@ -1,4 +1,9 @@
-/*HOME-FOOTER-PAGE*/
+:root {
+  --primary-color: #002c59;
+  --secondary-color: #5c6061;
+  --tertiary-color: #ffffff;
+}
+
 #home-footer-page {
   max-width: 1440px;
   margin: auto;
@@ -19,6 +24,14 @@
 #home-footer-page .social-media .social-media-icon {
   display: flex;
   gap: 10px;
+}
+
+#home-footer-page .social-media .social-media-icon img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#home-footer-page .social-media .social-media-icon img:hover {
+  transform: scale(1.2);
 }
 
 #home-footer-page .company h3 {

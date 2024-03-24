@@ -37,6 +37,17 @@
       const sidebar = document.querySelector('.sidebar')
       sidebar.style.display = 'none'
     }
+
+    function checkScreenSize() {
+      const isLargeScreen = window.innerWidth >= 768; 
+      if (isLargeScreen) {
+        hideSidebar();
+      }
+    }
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    
   </script>
 
   <script>

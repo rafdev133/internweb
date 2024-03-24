@@ -30,7 +30,6 @@
                     <a href="#">
                         <img src="assets/twitter-footer.jpg" alt="">
                     </a>
-
                 </div>
             </div>
             <div class="company">
