@@ -28,7 +28,6 @@
 #aboutUs-page .aboutUs-text span {
   font-size: 50px;
   font-weight: bold;
-
   color: var(--primary-color);
 }
 
@@ -63,7 +62,7 @@
 }
 
 /* For tablets and smaller desktop screens */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 990px) {
   /*ABOUT US PAGE*/
 
   #aboutUs-page {
@@ -75,14 +74,38 @@
 
   #aboutUs-page .aboutUs-img {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #aboutUs-page .aboutUs-img img {
-    width: 100%;
+    width: 650px;
   }
 
   #aboutUs-page .aboutUs-text {
     width: 100%;
+  }
+
+  #aboutUs-page .aboutUs-text h2 {
+    font-size: 16px;
+  }
+
+  #aboutUs-page .aboutUs-text h1 {
+    font-size: 35px;
+  }
+
+  #aboutUs-page .aboutUs-text span {
+    font-size: 35px;
+  }
+
+  #aboutUs-page .aboutUs-text p {
+    font-size: 14px;
+  }
+
+  #aboutUs-page .aboutUs-text button {
+    width: 140px;
+    height: 45px;
   }
 }
 
@@ -106,5 +129,9 @@
 
   #aboutUs-page .aboutUs-text {
     width: 100%;
+  }
+
+  #aboutUs-page .aboutUs-img img {
+    width: 550px;
   }
 }
