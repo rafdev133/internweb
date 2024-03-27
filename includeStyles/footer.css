@@ -14,6 +14,7 @@
 
 #home-footer-page .logo h1 {
   font-size: 28px;
+  cursor: pointer;
 }
 
 #home-footer-page .social-media h3 {
@@ -39,7 +40,12 @@
 }
 
 #home-footer-page .company p {
-  font-size: 14px;
+  font-size: 16px;
+}
+
+#home-footer-page .company p a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 #home-footer-page .useful-links h3 {
@@ -48,6 +54,11 @@
 
 #home-footer-page .useful-links p {
   font-size: 16px;
+}
+
+#home-footer-page .useful-links p a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 /* For tablets and smaller desktop screens */
@@ -68,10 +79,37 @@
   /*HOME-FOOTER-PAGE*/
   #home-footer-page {
     margin-top: 60px;
-    padding: 10px;
+    padding: 10px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 70px;
+  }
+
+  #home-footer-page .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #home-footer-page .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home-footer-page .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home-footer-page .useful-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

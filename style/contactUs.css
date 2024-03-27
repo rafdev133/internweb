@@ -169,10 +169,11 @@ nav .nav-link ul {
   height: 322px;
   display: flex;
   align-items: center;
-  padding-top: 70px;
+  justify-content: center;
   border-radius: 18px;
   border: 1px solid black;
   gap: 10px;
+  padding: 20px;
 }
 
 #contactUs-cards .cards .card:hover {

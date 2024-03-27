@@ -69,6 +69,8 @@ nav ul li button {
   background-color: var(--primary-color);
   color: var(--tertiary-color);
   margin-left: 10px;
+  margin: 15px 0px;
+  padding: 10px 0px;
 }
 
 nav .active a {

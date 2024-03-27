@@ -40,11 +40,12 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-self: center;
-  column-gap: 30px;
+  column-gap: 20px;
+  padding: 0px 30px;
 }
 
 #latest-news-page .latest-news-cards .card {
-  width: 349px;
+  width: 328px;
   height: 543px;
   display: flex;
   flex-direction: column;
