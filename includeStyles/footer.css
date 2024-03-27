@@ -72,6 +72,22 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
   }
+
+  #home-footer-page .company h3 {
+    font-size: 18px;
+  }
+
+  #home-footer-page .company p {
+    font-size: 14px;
+  }
+
+  #home-footer-page .useful-links h3 {
+    font-size: 18px;
+  }
+
+  #home-footer-page .useful-links p {
+    font-size: 14px;
+  }
 }
 
 /* For mobile devices */

@@ -329,6 +329,23 @@ html {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  #feature-page .feature-text h3 {
+    font-size: 18px;
+  }
+  
+  #feature-page .feature-text h1 {
+    font-size: 30px;
+  }
+
+  #feature-page .feature-cards .cards h2 {
+    font-size: 18px;
+  }
+  
+  #feature-page .feature-cards .cards p {
+    font-size: 14px;
+  }
+  
+
   /* What we offer Page*/
   #whatWeOffer-page {
     margin-top: 50px;
